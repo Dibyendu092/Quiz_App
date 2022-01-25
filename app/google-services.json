@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "771712313314",
+    "project_id": "quix-game",
+    "storage_bucket": "quix-game.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:771712313314:android:7cd0977e08e29bc85bbbbb",
+        "android_client_info": {
+          "package_name": "com.example.quizgame"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "771712313314-4j4ur58sjmi4vp44ipgmko3nipt2mof0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBdaqRv7M6RVYezRmnfJvGGMvSM4C0rbmA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "771712313314-4j4ur58sjmi4vp44ipgmko3nipt2mof0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

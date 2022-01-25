@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFC107"
+    tools:context=".QuizActivity">
+
+    <TextView
+        android:id="@+id/Time1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="20dp"
+        android:text=" Time :"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/Time2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Time2"
+        android:layout_width="29dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="60"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/TXT1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/mainQ"
+        android:layout_width="364dp"
+        android:layout_height="98dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="31dp"
+        android:background="#FF9800"
+        android:gravity="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtqn" />
+
+    <TextView
+        android:id="@+id/txtqn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="7dp"
+        android:text="Q."
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/txtqnp"
+        app:layout_constraintTop_toBottomOf="@+id/Time1" />
+
+    <TextView
+        android:id="@+id/txtqnp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="357dp"
+        android:text="0"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Time1" />
+
+    <TextView
+        android:id="@+id/txtoa"
+        android:layout_width="301dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="42dp"
+        android:background="#FF9800"
+        android:gravity="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainQ" />
+
+    <TextView
+        android:id="@+id/txtob"
+        android:layout_width="301dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="42dp"
+        android:background="#FF9800"
+        android:gravity="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtoa" />
+
+    <TextView
+        android:id="@+id/txtoc"
+        android:layout_width="301dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="47dp"
+        android:background="#FF9800"
+        android:gravity="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtob" />
+
+    <TextView
+        android:id="@+id/txtod"
+        android:layout_width="301dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="47dp"
+        android:background="#FF9800"
+        android:gravity="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtoc" />
+
+    <Button
+        android:id="@+id/btf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="28dp"
+        android:text="Finish"
+        app:layout_constraintEnd_toStartOf="@+id/btprev"
+        app:layout_constraintTop_toBottomOf="@+id/txtod" />
+
+    <Button
+        android:id="@+id/btprev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="40dp"
+        android:text="Previous"
+        app:layout_constraintEnd_toStartOf="@+id/btne"
+        app:layout_constraintTop_toBottomOf="@+id/txtod" />
+
+    <Button
+        android:id="@+id/btne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="47dp"
+        android:text="NEXT"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtod" />
+
+    <TextView
+        android:id="@+id/A"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="26dp"
+        android:text="A)"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/txtoa"
+        app:layout_constraintTop_toBottomOf="@+id/mainQ" />
+
+    <TextView
+        android:id="@+id/B"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="27dp"
+        android:text="B)"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/txtob"
+        app:layout_constraintTop_toBottomOf="@+id/A" />
+
+    <TextView
+        android:id="@+id/C"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="21dp"
+        android:text="C)"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/txtoc"
+        app:layout_constraintTop_toBottomOf="@+id/B" />
+
+    <TextView
+        android:id="@+id/D"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="61dp"
+        android:layout_marginEnd="21dp"
+        android:text="D)"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/txtod"
+        app:layout_constraintTop_toBottomOf="@+id/C" />
+
+    <TextView
+        android:id="@+id/TXT1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="18dp"
+        android:text="Correct Ans:"
+        app:layout_constraintEnd_toStartOf="@+id/TXT2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/TXT2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="179dp"
+        android:text="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/TXT3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="10dp"
+        android:text="Wrong Ans:"
+        app:layout_constraintEnd_toStartOf="@+id/TXT4"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/TXT4"
+        android:layout_width="12dp"
+        android:layout_height="19dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="56dp"
+        android:text="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
